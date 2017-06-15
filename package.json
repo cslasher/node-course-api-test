@@ -1,0 +1,28 @@
+{
+  "name": "node-todo-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./server/**/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'",
+    "start": "node server/server.js"
+  },
+  "engines": {
+    "node": "8.1.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongodb": "^2.2.28",
+    "mongoose": "^4.10.6"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0"
+  }
+}
