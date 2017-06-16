@@ -51,6 +51,27 @@ app.get('/todos/:id', (req, res) => {
     })
 })
 
+app.delete('/todos/:id', (req, res) => {
+   var id = req.params.id
+
+// Invalid ID
+    if (!ObjectID.isValid(id)) {
+        return res.status(404).send()
+    }
+    
+    Todo.findByIdAndRemove(id).then((todo) => {
+ 
+        // ID not found
+        if (!todo) {
+            return res.status(404).send()
+        }
+        
+        res.status(200).send({todo})
+    }, (e) => {
+        res.status(400).send()
+    })
+})
+
 app.post('/echo', (req, res) => {
     res.send(req.body)
     console.log(JSON.stringify(req.body, null, 2))
