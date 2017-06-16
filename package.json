@@ -12,7 +12,11 @@
   "engines": {
     "node": "8.1.0"
   },
-  "author": "",
+  "author": "Edwin L",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cslasher/node-course-api-test.git"
+  },
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.2",
