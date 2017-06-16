@@ -19,6 +19,6 @@ npm start
 npm run 'test-watch'
 ```
 ### 備註
-*主要測試在 server/test/server.test.js
-*可直接push到heroku
-*Heroku要有對應的Mongo instance，我是用mLab
+* 主要測試在 server/test/server.test.js
+* 可直接push到heroku
+* Heroku要有對應的Mongo instance，我是用mLab
