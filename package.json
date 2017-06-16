@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha ./server/**/*.test.js",
     "test-watch": "nodemon --exec 'npm test'",
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "mongodb-local": "mongod --dbpath=${HOME}/Data"
   },
   "engines": {
     "node": "8.1.0"
