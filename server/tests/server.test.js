@@ -10,28 +10,6 @@ var {todos, populateTodos, users, populateUsers} = require('./seed/seed')
 beforeEach(populateUsers)
 beforeEach(populateTodos)
 
-var {app} = require('./../server')
-var {Todo} = require('./../models/todo')
-
-const todos = [{
-    _id: new ObjectID(),
-    text: 'First todo'
-}, {
-    _id: new ObjectID(),
-    text: 'Second todo',
-    completed: true,
-    completedAt: 123000
-}]
-
-beforeEach((done) => {
-    Todo.remove({}).then(() => {
-        return Todo.insertMany(todos)
-    }).then(() => {
-        done()
-    })
-})
-
-
 describe('POST /todos', () => {
     it('should add a new todo', (done) => {
         var text = 'Test todo text'
