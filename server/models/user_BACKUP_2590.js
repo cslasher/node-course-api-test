@@ -75,6 +75,7 @@ UserSchema.pre('save', function(next) {
   
     if (user.isModified('password')) {
 
+<<<<<<< HEAD
     bcrypt.genSalt(10, (err, salt) => {
       if (err) {
         return console.log(err)
@@ -90,6 +91,17 @@ UserSchema.pre('save', function(next) {
   } else {
     next()  
   }
+=======
+        bcrypt.genSalt(10, (err, salt) => {
+            bcrypt.hash(user.password, salt, (err, hash) => {
+                user.password = hash
+                next()
+            })
+        })
+    } else {
+        next()  
+    }
+>>>>>>> 30ef8f58f70104ade41c5d8969e7235d525904dc
 })
 
 var User = mongoose.model('User', UserSchema)
