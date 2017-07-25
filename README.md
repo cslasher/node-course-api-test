@@ -9,6 +9,22 @@ Mocha測試的參考
 npm install
 ```
 
+## Configuration
+```
+{
+  "test": {
+    "PORT": <測試port>,
+    "MONGODB_URI": "<測試MongoDB URI>",
+    "JWT_SECRET": "<測試Secret>"
+  },
+  "development": {
+    "PORT": <dev port>,
+    "MONGODB_URI": "<DEV MongoDB URI>",
+    "JWT_SECRET": "<Dev Secret>"
+  }
+}
+```
+
 ### 啟動伺服器
 ```
 npm start
