@@ -10,7 +10,7 @@
     "mongodb-local": "mongod --dbpath=${HOME}/Data"
   },
   "engines": {
-    "node": "8.1.0"
+    "node": "8"
   },
   "author": "Edwin L",
   "repository": {
@@ -30,7 +30,7 @@
     "validator": "^7.0.0"
   },
   "devDependencies": {
-    "expect": "^1.20.2",
+    "expect": "^21.1.0",
     "mocha": "^3.4.2",
     "nodemon": "^1.11.0",
     "supertest": "^3.0.0"
