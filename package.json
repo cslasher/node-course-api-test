@@ -30,7 +30,7 @@
     "validator": "^13.7.0"
   },
   "devDependencies": {
-    "expect": "^21.1.0",
+    "expect": "^30.4.1",
     "mocha": "^3.4.2",
     "nodemon": "^1.11.0",
     "supertest": "^3.0.0"
